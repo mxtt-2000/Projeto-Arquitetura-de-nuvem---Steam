@@ -1,0 +1,12 @@
+Quais recursos serão utilizados:
+
+Compute - VMs/instances para microservices (k8s nodes) ou Fargate; serverless para funções.
+Storage - Object Storage (S3), block storage para DB (EBS), snapshots.
+Database - RDS (primary + read replicas), NoSQL (DynamoDB).
+Networking - Load Balancers, NAT gateways, VPC endpoints.
+CDN - edge for assets & game binaries.
+Message queue / streaming - Kafka / Kinesis / PubSub.
+Monitoring/logging - Managed monitoring, logs ingestion, retention costs.
+Security - WAF, KMS keys, Secrets Manager.
+Backups - snapshot storage and lifecycle.
+Bandwidth (egress) | importante para jogos/patches - principal custo variável.

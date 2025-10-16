@@ -1,0 +1,11 @@
+Estratégias de otimização de custo
+
+Auto-scaling: horizontally scale app pods / instances; reduzir instâncias ociosas. Configure min/max e policies baseadas em métricas relevantes (CPU, latência, filas).
+Spot/Preemptible instances: para workers batch/processing não críticos (ex.: processamento de thumbnails, jobs do data pipeline).
+Right-sizing: monitorar utilização e ajustar tipos de instância.
+Reserved/Savings Plans: para carga estável (DB, instâncias críticas).
+Tiered storage: mover backups/archives para cold storage (Glacier/Archive).
+Cache intensivo: reduzir chamadas ao DB com Redis.
+CDN para assets pesados: diminui egress e melhora latência.
+Shutdown de ambientes de dev/test fora do horário (automação para desligar recursos).
+Retenção de logs: ajustar políticas de retenção e reter apenas o necessário online.
